@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #ecf5ff;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  line-height: 0.9;
+}
+
+p {
+  margin: 0;
+}
+
+ul,li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background: #ffffff;
+  z-index: 999;
+  display: grid;
+  grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+}
+
+.nav {
+  grid-column: 3 / 4;
+}
+
+.navbar-brand {
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 60px;
+  grid-column: 2 / 3;
+}
+
+.nav-item {
+  margin: 0;
+  opacity: 1;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-list {
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  align-items: center;
+  grid-gap: 2rem;
+}
+
+.container {
+  width: 60%;
+  margin: 3rem auto 3rem auto;
+}
